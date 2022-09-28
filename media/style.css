@@ -1,0 +1,213 @@
+:root{
+    --main: #2B9DF4;
+    --linea: radial-gradient(circle, rgba(43,157,244,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+body{
+    font-family: 'Orbitron', 'Jura', sans-serif;
+}
+
+/* SPAZIO CHRIS */
+nav {
+    height: 7vh;
+    border-bottom: white 1px solid;
+}
+
+.nav-link{
+    font-size: 1.5vh;
+    
+}
+
+.header{
+    background-image: radial-gradient(circle, rgba(0,0,0,0.7) 0%, rgba(0,0,0,1) 100%) , url(./Media/moon.jpg);
+    height: 100vh;
+    background-position-y: -17vh;
+    background-position-x: -1.8vw;
+}
+
+.freccia{
+    position: absolute;
+    left: 45vw;
+    bottom: -5vh;
+}
+
+.colheader{
+    border-bottom: #2B9DF4 1px solid;
+    background-color: black;
+    width: 20vw;
+    height: 15vh;
+}
+
+.headergrid{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(3,5,8,1) 84%);
+    height: 10vh;
+}
+
+.freccia{
+    width: 1.5vw;
+    height: 2vh;
+    position: absolute;
+    bottom: 2vh;    
+}
+
+
+
+/* SPAZIO MARCO */
+.moon2 {
+    justify-content: center;
+    width: 660px;
+    height: 500px;
+    background-size: cover;
+}
+
+.styleh2 {
+    color: var(--main);
+    text-align: start !important;
+
+    
+}
+
+.fontp {
+    color: white;
+    text-align: justify;
+    
+}
+
+
+/* SPAZIO VALERIY */
+.colore-icona{
+    color:#2B9DF4 ;
+}
+.colonnaDiMezzo{
+    margin-top: 200px;
+    margin-right: 0px ;
+}
+.div-testo{
+    width: 300px;
+    margin: 0px !important;
+}
+.testo{
+    border-bottom:solid #2B9DF4;
+}
+.colore3{
+    background-color: black !important;
+}
+.t-color{
+    color: #2B9DF4;
+}
+div.testo-r{
+    margin-top: 500px !important;
+    text-align: center;
+}
+/* SPAZIO FEDE */
+.color-blu{
+    color:var(--main);
+}
+.resize-h4{
+    font-size: 1rem;
+}
+.resize-p{
+    font-size: 0.7rem;
+}
+.resize-btn{
+    font-size: 0.7rem;
+}
+.btn:hover ,.btn:hover::after, .btn:hover::after{
+    border: none !important;
+}
+.btnmy{
+    text-decoration:  none;
+    margin-top: 5px;
+}
+.outer{
+    cursor: pointer;
+}
+.outer:hover {
+    animation-name: btnani;
+    animation-duration: 1s;
+    background-color: var(--main);
+    transform: scale(150%);
+    border-radius: 50%;
+}
+
+@keyframes btnani{
+    0%{
+        transform: scale(125%);
+        border-radius: 20%;
+        background-color: var(--main);
+    }
+    100%{
+        transform: scale(150%);
+        border-radius: 50%;
+        background-color: var(--main);
+    }
+}
+.outer:hover::after{
+    border: none;
+}
+.outer:hover::before{
+    border: none;
+}
+.inner:hover::after{
+    border: none;
+}
+.inner:hover::before{
+    border: none;
+}
+.outer{
+    width: 80px;
+    height: 25px;
+    position: relative;
+}
+.outer::before, .outer::after, .inner::after, .inner::before{
+    content: '';
+    position: absolute;
+    height: 25%;
+    width: 8%;
+}
+.outer::after{
+    right: 0;
+    top: 0;
+    border-right: 2px solid var(--main);
+    border-top: 2px solid var(--main);
+}
+.outer::before{
+    border-left: 2px solid var(--main);
+    border-top: 2px solid var(--main);
+}
+.inner::before{
+    bottom: 0;
+    left: 0;
+    border-left: 2px solid var(--main);
+    border-bottom: 2px solid var(--main);
+}
+
+.inner::after{
+    bottom: 0;
+    right: 0;
+    border-right: 2px solid var(--main);
+    border-bottom: 2px solid var(--main);
+}
+
+.img-back{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.287) 100%, rgba(0, 0, 0, 0) 100%), url(./media/sunrise-1765027_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    -moz-box-shadow: inset 0 0 100px #000000;
+    -webkit-box-shadow: inset 0 0 100px #000000;;
+    box-shadow: inset 0 0 100px #000000;
+}
+
+.stric-out{
+    width: 35%;
+    border-style:  solid;
+    border-width: 2px ;
+    border-image: linear-gradient(to right,rgba(0, 0, 0, 0.192) , #2B9DF4,rgba(0, 0, 0, 0.192)) 1;
+}
+
+.foot{
+    height: 10vh;
+}
